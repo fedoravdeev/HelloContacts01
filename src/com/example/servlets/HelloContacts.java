@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/hello01")
+@WebServlet("/hello01")
 public class HelloContacts extends HttpServlet {
 
 	@Override
