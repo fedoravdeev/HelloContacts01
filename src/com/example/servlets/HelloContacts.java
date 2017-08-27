@@ -20,7 +20,8 @@ public class HelloContacts extends HttpServlet {
 		PrintWriter out = response.getWriter(); 
 												
 		out.write("<!DOCTYPE html>\n" + 										
-				"<html>\n" + "<head><title>Hello Contacts.</title></head>\n"
+				"<html>\n" 
+				+ "<head><title>Hello Contacts.</title></head>\n"
 				+ "<body bgcolor=\"#fdf5e6\">\n" + "<h1>Note:</h1>\n"
 				+ "<p>Hello Contacts was created via servlet</p>\n" + "</body></html>");
 	}
