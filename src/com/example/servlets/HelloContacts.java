@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/hello01")
+@WebServlet("/hello01")
 public class HelloContacts extends HttpServlet {
 
 	/**
@@ -43,7 +43,7 @@ public class HelloContacts extends HttpServlet {
 				while (rs.next()) {
 					String str = rs.getString("id") + ":" + rs.getString(2);
 					helloContacts = "<br>"+ helloContacts + str;
-					System.out.println("Contact:" + str);
+					//System.out.println("Contact:" + str);
 				}
 				rs.close();
 				stmt.close();
@@ -58,9 +58,7 @@ public class HelloContacts extends HttpServlet {
 				"<html>\n" 
 				+ "<head><title>Hello Contacts.</title></head>\n"
 				+ "<body bgcolor=\"#fdf5e6\">\n" + "<h1>Note:</h1>\n"
-				+ "<p>Hello Contacts was created via servlet</p>\n" +helloContacts+ "</body></html>");
-
-		
+				+ "<p>Hello Contacts was created via servlet</p>\n" +helloContacts+ "</body></html>");		
 
 	}
 
